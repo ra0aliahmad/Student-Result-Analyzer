@@ -14,8 +14,8 @@ A Python Data Science project that reads student marks from a CSV file, calculat
 ✅ Visualize data using graphs  
 
 ## 📈 Example Charts
-![Bar Chart]()
-![Pie Chart](\im\pie_chart.png)
+![Bar Chart](images/bar_chart.png)
+![Pie Chart](Images/pie_chart.png)
 
 ## 🚀 Run
 1. Clone the repo 
