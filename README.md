@@ -22,7 +22,7 @@ A Python Data Science project that reads student marks from a CSV file, calculat
 2. Run the notebook in VS Code or Jupyter  
 3. See the results in the dashboard!
 
-## Explaination
+## 📜 Explaination
 "A beginner friendly Data Science project built with Python that processes student marks from a CSV file, calculates totals and averages, assigns gradesautomatically and visualizes results with insightful charts" Great example of data analysis and visualization using Pandas and Matplotlib!
 
 
