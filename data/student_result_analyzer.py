@@ -9,7 +9,7 @@ df = pd.read_csv("data/marks.csv")
 df["Total"] = df.iloc[:, 1:].sum(axis=1)
 df["Average"] = df["Total"] / (df.shape[1] - 1)
 
-# Assign grades
+# Function to assign grades
 def assign_grade(avg):
     if avg >= 85:
         return "A"
@@ -22,31 +22,32 @@ def assign_grade(avg):
     else:
         return "F"
 
+# Apply grade assignment
 df["Grade"] = df["Average"].apply(assign_grade)
 
-# Print analyzed data
-print("📊 Student Results:\n")
+# Display analyzed data
+print("Student Results:\n")
 print(df)
 print("\nClass Average:", round(df["Average"].mean(), 2))
 
 # Bar chart - Total Marks
-plt.figure(figsize=(8,5))
-plt.bar(df["Name"], df["Total"], color='skyblue')
+plt.figure(figsize=(8, 5))
+plt.bar(df["Name"], df["Total"], color="skyblue")
 plt.title("Total Marks of Students")
 plt.xlabel("Students")
 plt.ylabel("Total Marks")
-plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.grid(axis="y", linestyle="--", alpha=0.7)
 plt.show()
 
 # Pie chart - Grade Distribution
 grade_counts = df["Grade"].value_counts()
-plt.figure(figsize=(6,6))
+plt.figure(figsize=(6, 6))
 plt.pie(
     grade_counts,
     labels=grade_counts.index,
-    autopct='%1.1f%%',
+    autopct="%1.1f%%",
     startangle=90,
-    colors=['#66b3ff','#99ff99','#ffcc99','#ff9999','#c2c2f0']
+    colors=["#66b3ff", "#99ff99", "#ffcc99", "#ff9999", "#c2c2f0"]
 )
 plt.title("Grade Distribution")
 plt.show()
