@@ -5,7 +5,10 @@ A Python Data Science project that reads student marks from a CSV file, calculat
 ## 📦 Tools
 - Python
 - Pandas
-- Matplotlib
+- Matplotlib  
+- Jupyter Notebook  
+- VS Code  
+- Git & GitHub
 
 ## 📊 Features
 ✅ Read marks from CSV  
